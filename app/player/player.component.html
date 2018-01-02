@@ -1,0 +1,15 @@
+<GridLayout
+        (tap)="submit()">
+    <StackLayout #imageContainer>
+        <Image #imageView></Image>
+    </StackLayout>
+    <StackLayout #webviewContainer style = "height:100%">
+        <web-view #webView>
+        </web-view>
+    </StackLayout>
+    <StackLayout #busyContainer style="vertical-align: center">
+        <ActivityIndicator
+                [busy]="isConnecting">
+        </ActivityIndicator>
+    </StackLayout>
+</GridLayout>

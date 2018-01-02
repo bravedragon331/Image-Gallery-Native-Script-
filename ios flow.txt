@@ -1,0 +1,5 @@
+https://docs.nativescript.org/start/ns-setup-os-x
+
+tns prepare ios
+tns run ios --emulator
+tns build ios

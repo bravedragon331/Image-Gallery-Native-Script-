@@ -1,0 +1,26 @@
+<GridLayout>
+    <StackLayout #formContainer class="d-form-container" >
+        <Label
+            text = "Server" class="d-server-label"></Label>
+
+        <TextField #password
+           [(ngModel)]="serverAddress"
+           hint="https://api-dev.your-concerto.com/v1alpha1/"
+           >
+        </TextField>
+
+        <Button
+            text="OK"
+            class="d-server-button"
+            [isEnabled]="!isConnecting"
+            (tap)="submit()">
+        </Button>
+    </StackLayout>
+
+    <StackLayout #busyContainer class="d-busy-container">
+        <ActivityIndicator
+                [busy]="isConnecting">
+        </ActivityIndicator>
+    </StackLayout>
+
+</GridLayout>

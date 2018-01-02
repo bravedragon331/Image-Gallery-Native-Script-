@@ -1,0 +1,19 @@
+
+.d-form-container{
+    vertical-align: center;
+    margin: 30;
+}
+.d-server-label{
+    text-align: left;
+}
+.d-server-button {
+    background-color: #3d5afe;
+    color: white;
+    margin-top: 10;
+    width:100;
+}
+.d-busy-container{
+    vertical-align: center;
+    margin: 30;
+    opacity: 0;
+}
